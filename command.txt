@@ -1,0 +1,34 @@
+・dockerバージョン確認コマンド
+  $ docker --version
+  Docker version **.**.*, build *******
+
+・Docker imageを取得
+  $ docker pull イメージ名:タグ名
+
+・保有しているDocker imageの一覧を表示
+  $ docker images
+
+・Docker imageからコンテナを作成
+  $ docker run
+
+・起動中のコンテナへログイン
+  $ docker exec -it コンテナ名orコンテナID bash
+
+・起動中のコンテナ一覧を表示
+ $ docker ps
+
+・（起動していないものも含め）コンテナ一覧を表示
+  $ docker ps -a
+
+・起動しているコンテナを停止
+  $ docker stop コンテナ名	
+
+・コンテナを起動
+  $ docker start コンテナ名orコンテナID
+
+・停止中のコンテナを削除
+  $ docker rm コンテナ名orコンテナID
+
+・ホスト側に存在するファイルをコンテナへコピー
+  $ docker cp ファイルパス コンテナ名orコンテナID : ディレクトリパス
+
