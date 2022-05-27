@@ -4,12 +4,19 @@
 
 ・Docker imageを取得
   $ docker pull イメージ名:タグ名
+  例えば
+  $ docker pull ubuntu:18.04
 
 ・保有しているDocker imageの一覧を表示
   $ docker images
 
+・Docker imageを削除
+  $ docker rmi [イメージID]
+
 ・Docker imageからコンテナを作成
   $ docker run
+  $ docker run --name myubuntu -it ubuntu /bin/bash 
+
 
 ・起動中のコンテナへログイン
   $ docker exec -it コンテナ名orコンテナID bash
@@ -20,11 +27,13 @@
 ・（起動していないものも含め）コンテナ一覧を表示
   $ docker ps -a
 
-・起動しているコンテナを停止
-  $ docker stop コンテナ名	
-
 ・コンテナを起動
   $ docker start コンテナ名orコンテナID
+  例えば
+  $ docker start myubuntu
+
+・起動しているコンテナを停止
+  $ docker stop コンテナ名	
 
 ・停止中のコンテナを削除
   $ docker rm コンテナ名orコンテナID
