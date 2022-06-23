@@ -22,7 +22,7 @@
   $ docker exec -it コンテナ名orコンテナID bash
 
 ・起動中のコンテナ一覧を表示
- $ docker ps
+  $ docker ps
 
 ・（起動していないものも含め）コンテナ一覧を表示
   $ docker ps -a
